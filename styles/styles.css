@@ -1,0 +1,169 @@
+/*-------font-------*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--Light-Grayish-Blue);
+}
+
+h2 {
+    color: var(--Very-Dark-Grayish-Blue);
+}
+
+p {
+    color: var(--Desaturated-Dark-Blue);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 700px;
+    padding: 0 61px;
+    margin: 0 auto;
+}
+
+main .img {
+    height: 270px;
+    width: 275px;
+    object-fit: cover;
+    object-position: 0% 0%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    background-color: #fff;
+    width: 60%;
+    height: 210px;
+    padding: 30px 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+section p {
+    line-height: 1.4;
+}
+
+footer {
+    display: flex;
+    margin: 24px 0px;
+    position: relative;
+}
+  
+.avatar {
+    display: flex;
+    margin-right: 15px;
+}
+  
+.avatar img {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+}
+  
+.about {
+    margin-right: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+} 
+
+.about p {
+    font-size: 12px;
+}
+  
+.icon {
+    background-color: var(--Light-Grayish-Blue);
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 3px;
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+
+.icon-img {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    transition: all 0.5s ease;
+}
+
+.desktop-share {
+    display: flex;
+    position: absolute;
+    right: -100.5px;
+    top: -72px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: var(--Very-Dark-Grayish-Blue);
+    transition: 0.5s;
+}
+
+.desktop-share::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -12px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: var(--Very-Dark-Grayish-Blue) transparent transparent transparent;
+  }
+
+.desktop-share img {
+    padding-left: 15px;
+}
+
+.desktop-share h4 {
+    color: var(--Grayish-Blue);
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.icon-facebook {
+    cursor: pointer;
+}
+
+.icon-twitter {
+    cursor: pointer;
+}
+
+.icon-pinterest {
+    cursor: pointer;
+}
+
